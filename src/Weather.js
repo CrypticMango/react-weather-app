@@ -1,7 +1,8 @@
 import React from "react";
 
 export default function Weather() {
-   return ( <div>
+   return (
+    <body> <div>
         <div className="card-whole-app" style={{width: '65rem'}}>
           <div className="card-body">
             <h5 className="card-title"></h5>
@@ -111,6 +112,8 @@ export default function Weather() {
                     </div>
                   </div>
 
+
+
         <p className="my-name">
           <a href="https://github.com/CrypticMango/weather-app-project"  target="_blank" rel="noreferrer" className="name-link">open-source code</a> by Lisa Allen. Hosted on
           <a href="https://www.netlify.com"  target="_blank" rel="noreferrer" className="name-link">Netlify.</a>
@@ -120,5 +123,7 @@ export default function Weather() {
         </div>
         </div>
         </div>
+        </body>
     );
+    
 }
