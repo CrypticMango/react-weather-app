@@ -8,8 +8,6 @@ import Weather from './Weather';
 ReactDOM.render(
   <React.StrictMode>
       <div className="App">
-        <h1>Weather App</h1>
-    <Search />
     <Weather />
     
     </div>
