@@ -115,13 +115,14 @@ export default function Weather() {
 
 
         <p className="my-name">
-          <a href="https://github.com/CrypticMango/weather-app-project"  target="_blank" rel="noreferrer" className="name-link">open-source code</a> by Lisa Allen. Hosted on
-          <a href="https://www.netlify.com"  target="_blank" rel="noreferrer" className="name-link">Netlify.</a>
+          <a href="https://github.com/CrypticMango/weather-app-project"  target="_blank" rel="noreferrer" className="name-link">open-source code</a> by Lisa Allen. Hosted on 
+          <a href="https://www.netlify.com"  target="_blank" rel="noreferrer" className="name-link"> Netlify.</a>
         </p>
         <script src="src/app.js"></script>
         </div>
         </div>
         </div>
+        <button className="btn btn-warning">hello</button>
         </div>
         </body>
     );
