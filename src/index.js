@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom';
 import './styles.css';
 import reportWebVitals from './reportWebVitals';
 import Search from './Search';
+import Weather from './Weather';
 
 ReactDOM.render(
   <React.StrictMode>
       <div className="App">
         <h1>Weather App</h1>
     <Search />
+    <Weather />
     
-   
     </div>
-    <p> <a href="https://github.com/CrypticMango/react-weather-app" target="_blank" rel="noreferrer">Open Sourced Project</a> by Lisa Allen hosted on <a href="https://www.netlify.com" target="_blank" rel="noreferrer">Netlify</a></p>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );
