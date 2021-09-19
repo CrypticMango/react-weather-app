@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props){
 return  (
@@ -44,9 +45,8 @@ return  (
       <p className="large-temp">
       <WeatherIcon code={props.data.icon} />
 
-        <span id="current-temperature">
-          {Math.round(props.data.temperature)}°C
-          </span>
+        <WeatherTemperature celsius={props.data.temperature} />
+      
        </p>
     </div>
     
@@ -73,19 +73,11 @@ return  (
             Night
             CHILLY <i className="fas fa-temperature-low"></i>
           </p>
-        </div>
+<br/>
+<br/>
 
-        {/* days of the week */}
-
-        <div className="col-8 align-self-center">
-          <div className="weather-by-the-day" id="weather-forecast">
-            <i className="fas fa-sun daily-icon"></i>
-            <br />
-            MON
-            <br />
-            22°C
-          </div>
         </div>
+        
 <script src="src/app.js"></script>
 </div>
 </div>
