@@ -8,7 +8,7 @@ import Myname from "./Myname";
 ReactDOM.render(
   <React.StrictMode>
       <div className="App">
-    <Weather defaultCity="New York"/>
+    <Weather defaultCity="Liverpool"/>
     <Myname />
     <Bootstrap />
     </div>
