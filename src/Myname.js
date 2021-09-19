@@ -1,4 +1,5 @@
 import React from "react"; 
+import "./Myname.css";
 
 export default function Myname() {
 
@@ -8,9 +9,9 @@ return (
 <a href="https://github.com/CrypticMango/weather-app-project"  
 target="_blank" 
 rel="noreferrer" 
-className="name-link">open-sourced code</a> 
+className="name-link">Open sourced code</a>  
 
-by Lisa Allen. Hosted on 
+{" "} by Lisa Allen. Hosted on 
 
 <a href="https://www.netlify.com"  
 target="_blank" 

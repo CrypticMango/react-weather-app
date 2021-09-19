@@ -1,0 +1,23 @@
+.Myname .my-name {
+    color: #6d44b1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 14px;
+  }
+
+  .Myname a {
+    text-decoration: none;
+    color: #6d44b1 !important;
+    font-size: 25px;
+  }
+
+ .Myname a:hover {
+    color: #6d44b1;
+  }
+
+  .Myname a.name-link {
+    text-decoration: none;
+    color: #6d44b1;
+    font-size: 16px;
+   }
