@@ -1,4 +1,9 @@
- .h1,
+.Weather {
+  font-family: "Offside", cursive;
+  color: #6d44b1;
+}
+ 
+ .Weather .h1,
   h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -7,32 +12,27 @@
     margin-top: 0;
   }
   
- input {
+ .Weather input {
     padding: 5px;
   }
 
- body {
-    font-family: "Offside", cursive;
-    color: #6d44b1;
-  }
-  
-  h1 {
+  .Weather h1 {
     font-size: 35px;
   }
   
-  h2 {
+  .Weather h2 {
     font-size: 25px;
   }
   
-  h3 {
+  .Weather h3 {
     font-size: 15px;
   }
   
-  .daily-icon {
+  .Weather .daily-icon {
     font-size: 3rem;
   }
 
-  .card-whole-app {
+  .Weather .card-whole-app {
     background: black;
     max-width: 850px;
     max-height: 550px;
@@ -44,17 +44,17 @@
     box-shadow: 0 10px 15px 0 black;
   }
 
-  .card-body {
+  .Weather .card-body {
     padding: 0;
   }
   
-  .form-control {
+  .Weather .form-control {
     background-color: black;
     color: white;
     border-color: #6d44b1;
   }
   
-  .btn-primary {
+  .Weather .btn-primary {
     background-color: #6d44b1;
     border-color: #6d44b1;
     position: relative;
@@ -63,109 +63,109 @@
     color: #000000;
   }
   
-  .btn-primary:hover {
+  .Weather .btn-primary:hover {
     background-color: black;
     border-color: #6d44b1;
     color: #EC6E4C;
   }
   
-  .btn:focus {
+  .Weather .btn:focus {
     border-color: #EC6E4C;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #EC6E4C;
     background-color: #6d44b1;
     color: #000000;
   }
   
-  a.name-link {
+  .Weather a.name-link {
     text-decoration: none;
     color: #6d44b1;
     font-size: 16px;
    }
   
-  .my-name {
+  .Weather .my-name {
     color: #6d44b1;
     text-align: center;
     padding: 20px;
     position: relative;
-    top: -50px
+    top: 50px;
   }
   
-  a {
+  .Weather a {
     text-decoration: none;
-    color: #6d44b1;
+    color: #6d44b1 !important;
     font-size: 25px;
   }
   
-  a:hover {
+  .Weather a:hover {
     color: #6d44b1;
   }
   
-   .weather-bar {
+  .Weather .weather-bar {
     margin: 0;
     display: inline;
     font-size: 25px;
   }
   
-  #current-city {
+  .Weather #current-city {
     color: #EC6E4C;
     margin: 0;
     font-weight: bold;
   }
   
-  .city-info {
+  .Weather .city-info {
     position: relative;
     top: 60px;
     left: 20px;
   }
   
-  .large-temp {
+  .Weather .large-temp {
     font-size: 450%;
     position: relative;
     left: -5px;
     top: -20px;
   }
   
-  .weather-by-the-day {
+  .Weather .weather-by-the-day {
     font-size: 60%;
     position: relative;
     top: -90px;
     left: 70px;
   }
   
-  .today-header {
+  .Weather .today-header {
     color: #EC6E4C;
     font-size: 35px;
     font-weight: bold;
   }
   
-  .today-column {
+  .Weather .today-column {
     padding: 20px 100px;
     position: relative;
     right: -30px;
     top: 60px;
   }
   
-  #weather-forecast {
+  .Weather #weather-forecast {
     text-align: center;
     margin-top: 54px;
     font-size: 20px;
   }
   
-  .form-control:valid {
+  .Weather .form-control:valid {
     background-color:  #6d44b1;
   }
   
-  .form-control::placeholder {
+  .Weather .form-control::placeholder {
     color: #EC6E4C;
     opacity: 1; 
   }
   
-  form-control:focus {
+  .Weather form-control:focus {
     border-color: #EC6E4C;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #EC6E4C;
   }
   
-  #city-input {
+  .Weather #city-input {
     position: relative;
     left: 20px;
     top: 20px;
@@ -174,30 +174,34 @@
     color: #EC6E4C;
   }
   
-  #unit-conversion-buttons {
+  .Weather #unit-conversion-buttons {
     color: #EC6E4C;
     font-weight: bold;
     font-size: 20px;
   }
   
-  #day-time {
+  .Weather #day-time {
     font-weight: bold;
   }
   
-  .weather-forecast-weekday {
+  .Weather .weather-forecast-weekday {
     font-weight: bold;
   }
   
-  .weather-forecast-max {
+  .Weather .weather-forecast-max {
     font-weight: bold;
     font-size: 15px;
   }
   
-  .weather-forcast-min {
+  .Weather .weather-forcast-min {
     font-size: 15px;
   }
   
-  #icon {
+  .Weather #icon {
     position: relative;
     right: -30px;
+  }
+
+  .Weather .card-body {
+    padding: 0 !important;
   }
