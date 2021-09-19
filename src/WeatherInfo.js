@@ -34,12 +34,6 @@ return  (
       <br/>
       <br/>
 
-      <div id="unit-conversion-buttons">
-          
-        <a id="celsius-button" href="/">C</a> | <a id="fahrenheit-button" href="/">F</a> 
-        
-        </div>
-
     </div>
     <div className="col-3 align-self-center">
       <p className="large-temp">
