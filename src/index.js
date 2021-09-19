@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Weather.css';
 import reportWebVitals from './reportWebVitals';
 import Weather from './Weather';
 import Bootstrap from "./Bootstrap";
+import Myname from "./Myname";
 
 ReactDOM.render(
   <React.StrictMode>
       <div className="App">
-    <Weather />
+    <Weather defaultCity="New York"/>
+    <Myname />
     <Bootstrap />
     </div>
   

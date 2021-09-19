@@ -1,7 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
+import axios from "axios";
+import "./Weather.css"
 
-export default function Weather() {
-   return (
+export default function Weather(props) {
+  const [weatherData, setWeatherData] = useState({ready: false});
+ function handleResponse(response) {
+  console.log(response.data);
+  setWeatherData({
+    ready: true,
+    temperature: response.data.main.temp,
+    wind: response.data.wind.speed,
+    date: "September 18th | 9:10PM",
+    humidity: response.data.main.humidity,
+    city: response.data.name,
+    description: response.data.weather[0].description,
+    icon: response.data.weather[0].icon
+  })
+}
+
+if (weatherData.ready) {
+  return (
     <div className="Weather">
         <div className="card-whole-app" style={{width: '65rem'}}>
           <div className="card-body">
@@ -43,19 +61,19 @@ export default function Weather() {
                 </h1>
     
                 <h2 id="day-time">
-                  May 22nd | 11:00AM
+                {weatherData.date}
                 </h2>
     
-                <h3 id="humidity">
-                  26% humidity
-                </h3>
+                <div id="humidity">
+                  Humidity: {weatherData.humidity}%
+                </div>
     
                 <span id="wind">
-                  wind
+                  Wind: {Math.round(weatherData.wind)} km/h
                 </span>
                 
-                <div id="description">
-                  sunny
+                <div id="description" className="text-capitalize">
+                Description: {weatherData.description}
                 </div> 
     
                 <br/>
@@ -70,8 +88,13 @@ export default function Weather() {
               </div>
               <div className="col-3 align-self-center">
                 <p className="large-temp">
-                  <img id="icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt=""/>  
-                  <span id="current-temperature">25°C</span>
+                  <img id="icon" 
+                  src="http://openweathermap.org/img/wn/10d@2x.png" 
+                  alt=""/>  
+
+                  <span id="current-temperature">
+                    {Math.round(weatherData.temperature)}
+                    </span>
                  </p>
               </div>
               
@@ -114,12 +137,18 @@ export default function Weather() {
         <script src="src/app.js"></script>
         </div>
         </div>
-        <p className="my-name">
-          <a href="https://github.com/CrypticMango/weather-app-project"  target="_blank" rel="noreferrer" className="name-link">open-sourced code</a> by Lisa Allen. Hosted on 
-          <a href="https://www.netlify.com"  target="_blank" rel="noreferrer" className="name-link"> Netlify.</a>
-        </p>
         </div>
+       
         </div>
-    );
-    
+  );
+} else {
+
+  const apiKey = "8e38e8204be405dd999881c7e6509a30";
+  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`
+  axios.get(apiUrl).then(handleResponse);
+
+  return "Loading please wait..";
+}
+
+
 }
