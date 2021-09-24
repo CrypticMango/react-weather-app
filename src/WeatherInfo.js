@@ -37,7 +37,7 @@ return  (
     </div>
     <div className="col-3 align-self-center">
       <p className="large-temp">
-      <WeatherIcon code={props.data.icon} />
+      <WeatherIcon code={props.data.icon} size={100} />
 
         <WeatherTemperature celsius={props.data.temperature} />
       
