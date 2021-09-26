@@ -19,7 +19,12 @@ export default function Weather(props) {
     city: response.data.name,
     description: response.data.weather[0].description,
     icon: response.data.weather[0].icon,
+    feels: response.data.main.feels_like,
+    pressure: response.data.main.pressure,
+    min: response.data.main.temp_min,
+    max: response.data.main.temp_max,
   })
+  console.log(response);
 }
 
 function search(){

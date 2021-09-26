@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props){
 return  (
@@ -49,23 +50,27 @@ return  (
             Today
           </p>
           <p>
-            Morning
-            HOT <i className="fas fa-temperature-high"></i>
+            Minimum
+            <br />
+            <span className="data-colour">{Math.round(props.data.min)}°</span>
           </p>
 
           <p>
-            Noon
-            SUNNY <i className="fas fa-thermometer-half"></i>
+            Maximum
+            <br />
+            <span className="data-colour">{Math.round(props.data.max)}°</span>
           </p>
 
           <p>
-            Evening
-            MISTING <i className="fas fa-cloud-rain"></i>
+            Feels Like
+            <br />
+            <span className="data-colour">{Math.round(props.data.feels)}°</span>
           </p>
 
           <p>
-            Night
-            CHILLY <i className="fas fa-temperature-low"></i>
+            Pressure
+            <br />
+            <span className="data-colour">{Math.round(props.data.pressure)} mbar</span>
           </p>
 <br/>
 <br/>
