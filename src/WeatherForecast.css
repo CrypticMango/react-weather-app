@@ -2,6 +2,8 @@
     text-align: center;
     position: relative;
     top: -80px;
+  
+
 }
 
 .WeatherForecast-temperature-min {
@@ -9,3 +11,6 @@
     margin-left: 5px;
 }
 
+.WeatherForecast .forecast-spacing {
+    padding: 0px 50px;
+}
